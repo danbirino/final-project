@@ -12,7 +12,7 @@ $(function(){
 
     $( "#l-name" )
     .mouseover(function() {
-        $("#l-name").css("color","#003334");
+        $("#l-name").css("color","#daa520");
         $("#l-name").append("<sub>Lee</sub>")
     })
     .mouseout(function() {
@@ -24,7 +24,7 @@ $(function(){
 
     $( "#m-name" )
     .mouseover(function() {
-        $("#m-name").css("color","#003334");
+        $("#m-name").css("color","#daa520");
         $("#m-name").append("<sub>Dan</sub>")
     })
     .mouseout(function() {
@@ -36,7 +36,7 @@ $(function(){
 
     $( "#f-name" )
     .mouseover(function() {
-        $("#f-name").css("color","#003334");
+        $("#f-name").css("color","#daa520");
         $("#f-name").append("<sub>Bi</sub>")
     })
     .mouseout(function() {

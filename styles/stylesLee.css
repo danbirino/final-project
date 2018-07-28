@@ -7,55 +7,55 @@ html {
 body {
     background-color: black;
     color: white;
-    min-height: 100%;
-    display: inline-flex;
-    /* flex-direction: row;
-    justify-content: space-evenly; */
-    align-items: center;
-
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #daa520;
+    text-decoration: none;
+}
+
+.empty-container {
+    min-height: 600px;
+    width: 70%;
+}
 .places {
     color: white;
-    line-height: 2em;
-    font-size: 20px;
-    display:flex;
-    flex-direction: column;
-    min-height: 600px;
-    min-width: 200px;
-    padding: 0px 30px 0px 30px;
+    line-height: 1.5em;
+    font-size: 3em;
+    min-height: 100%;
+    min-width: auto;
     font-family: Roboto;
-    /* border-right-width: 1px;
-    border-color: white;
-    border-style: dashed; */
+    align-content: right;
 }
-
-.container {
-    position:fixed;
-    align-content:center;
-    top:25%;
-    right: 25%;
-}
-
 
 .go-back {
-    position:fixed;
+    position: fixed;
     align-content:center;
     top:2%;
     left: 2%;
+    font-family: roboto;
+    font-weight: 900;
 }
 
 #mapid {
+    position: fixed;
+    align-self: center;
+    margin-left: 3%;
     min-height: 600px;
-    width: 600px;
+    width: 60%;
     background-color: aquamarine;
     border-radius: 10px;
-    /* margin: 30px 30px 30px 30px; */
 }
-/* 
-#mapid { 
-    min-height: 100%; 
-} */
+
 
 
 /* to-do

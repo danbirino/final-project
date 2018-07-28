@@ -8,42 +8,54 @@ body {
     background-color: black;
     color: white;
     min-height: 100%;
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    /* flex-direction: row;
+    justify-content: space-evenly; */
     align-items: center;
-    justify-content: space-evenly;
+
 }
 
-.details {
-    float: top-left;
+.places {
+    color: white;
+    line-height: 2em;
+    font-size: 20px;
     display:flex;
     flex-direction: column;
     min-height: 600px;
     min-width: 200px;
-    margin: 0px 30px 30px 30px;
-    padding: 0px 30px 30px 30px;
-    border-right-width: 1px;
+    padding: 0px 30px 0px 30px;
+    font-family: Roboto;
+    /* border-right-width: 1px;
     border-color: white;
-    border-style: dashed;
+    border-style: dashed; */
 }
 
 .container {
-    
-    height: 600px;
+    position:fixed;
+    align-content:center;
+    top:25%;
+    right: 25%;
+}
+
+
+.go-back {
+    position:fixed;
+    align-content:center;
+    top:2%;
+    left: 2%;
+}
+
+#mapid {
+    min-height: 600px;
     width: 600px;
     background-color: aquamarine;
     border-radius: 10px;
     /* margin: 30px 30px 30px 30px; */
 }
-
-.play-again {
-    float: top;
-    margin: 10px 10px 10px 10px;
-}
-
+/* 
 #mapid { 
     min-height: 100%; 
-}
+} */
 
 
 /* to-do

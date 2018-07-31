@@ -5,7 +5,7 @@ $(function(){
     const $midName = $('#m-name');
     const $firstName = $('#f-name');
 
-    $("nameplate")
+    $( "nameplate" )
     .click(function(){
         window.location = "./index.html";
     });
@@ -45,6 +45,21 @@ $(function(){
     .click(function() {
         window.location = "./bi.html";
     });
-      
+    
+})
 
+//functions for lee.html
+
+$( ".places" ).each(function () {
+    $(".place")
+    .mouseover(function() {
+        $(this).css("color","#daa520");
+    })
+    .mouseout(function() {
+        $(this).css("color","#d4d4d4")
+    })
+    .on("click",function() {
+        $(this).css("text-decoration","underline")
+        
+    })
 })

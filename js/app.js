@@ -70,4 +70,36 @@ $( ".places" ).each(function () {
     })
 })
 
+//functions for dan.html
+$(function() {
+    const $searchButton = $('select');
 
+    function searchGiphy(searchTerm) {
+        return $.ajax({
+            url: `https://api.giphy.com/v1/gifs/search?api_key=P4B2q79lmQ6UYLaVVBV2fqY47sR9hZLc&q=${searchTerm}&limit=25&offset=0&rating=R&lang=en`
+        });
+    }
+
+    function buildUi(data) {
+        data.forEach(function(gif) {
+            const $gifContainer= $('.gif-container');
+
+            const imgTag = $(`<img class="gif" src=${gif.images.original.url}>`)
+            $gifContainer.append(imgTag);
+        });
+    }
+
+    $searchButton.on('click', function() {
+        const $searchInput = $('.search-input')
+        $('.gif-container').empty();
+
+        searchGiphy($searchInput.val())
+            .then(function(data) {
+                buildUi(data.data);
+                $searchInput.val('')
+            })
+            .catch(function(err) {
+                console.error(err);
+            })
+    });
+});

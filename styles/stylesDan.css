@@ -48,3 +48,46 @@ a:hover, a:active {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+.selector {
+    position: fixed;
+    display: flex;
+    top:2%;
+    right: 2%;
+    font-family: Kirang Haerang;
+    font-size: 1em;
+}
+
+select {
+    background-color: white;
+    height: auto;
+    top: 3%;
+    right: 2%;
+    font-family: Playfair Display;
+    font-size: 1em;
+    border-width: 0px;
+}
+
+select select {
+    display: none;
+}
+
+select-selected {
+    background-color: black;
+    color: white;
+}
+
+/* select-selected: after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent; 
+} */
+
+select-hide {
+    display: none;
+}

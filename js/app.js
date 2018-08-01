@@ -48,6 +48,12 @@ $(function(){
     
 })
 
+$(".nav-text").hover(function(){
+    $("#go-back").show();
+    }, function(){
+    $("#go-back").hide();
+});
+
 //functions for lee.html
 
 $( ".places" ).each(function () {
@@ -60,6 +66,8 @@ $( ".places" ).each(function () {
     })
     .on("click",function() {
         $(this).css("text-decoration","underline")
-        
+
     })
 })
+
+

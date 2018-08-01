@@ -103,3 +103,14 @@ $(function() {
             })
     });
 });
+
+//functions for bi.html
+$( ".container" ).each(function () {
+    $(".object")
+    .hover(function() {
+        $(this).animate({opacity:1},500);
+    }, function() {
+        $(this).animate({opacity:.2}, 500);
+        console.log('fadeback')
+    })
+})

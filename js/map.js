@@ -1,4 +1,4 @@
-var mymap = L.map('mapid').setView([43.648555, -79.369935], 10);
+var mymap = L.map('mapid').setView([43.648555, -79.369935], 15);
 
 // load a tile layer
 var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {

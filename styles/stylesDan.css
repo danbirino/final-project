@@ -6,6 +6,17 @@ html {
 }
 
 body {
+    background-image: url("https://static.wixstatic.com/media/877eb7_078c3e18526a4fff9743506e339b4895.jpg/v1/fill/w_1604,h_818,al_c,q_85/877eb7_078c3e18526a4fff9743506e339b4895.webp");
+    background-color: white;
+    color: rgb(19, 19, 19);
+    min-height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+body2 {
+    background-image: url("https://static.wixstatic.com/media/877eb7_7fa8baa7ca01446099402a51838fba19.jpg/v1/fill/w_640,h_327,al_c,q_80/877eb7_7fa8baa7ca01446099402a51838fba19.webp");
     background-color: white;
     color: rgb(19, 19, 19);
     min-height: 100%;
@@ -24,14 +35,24 @@ a:hover, a:active {
     text-decoration: none;
 }
 
-.flex-container {
+.gallery {
     position: fixed;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     top: 10%;
     min-height: 100%;
     min-width: 100%;
-    background-color: black;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+.col {
+    width: 40px;
+    height: 100%;
+    background-color: wheat
 }
 
 .nav {

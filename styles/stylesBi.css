@@ -14,16 +14,24 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: Playfair Display;
+
 }
 
 a:link, a:visited {
     color: rgb(19, 19, 19);
     text-decoration: none;
+    
 }
 
 a:hover, a:active {
     color: white;
     text-decoration: none;
+}
+
+p:hover {
+    color: rgb(19, 19, 19);
+    font-family: Playfair Display;
 }
 
 .flex-container {

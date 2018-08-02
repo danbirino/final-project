@@ -15,16 +15,6 @@ body {
     flex-direction: row;
 }
 
-body2 {
-    background-image: url("https://static.wixstatic.com/media/877eb7_7fa8baa7ca01446099402a51838fba19.jpg/v1/fill/w_640,h_327,al_c,q_80/877eb7_7fa8baa7ca01446099402a51838fba19.webp");
-    background-color: white;
-    color: rgb(19, 19, 19);
-    min-height: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
 a:link, a:visited {
     color: rgb(19, 19, 19);
     text-decoration: none;
